@@ -15,5 +15,6 @@ services:
       - ./postgre/init:/docker-entrypoint-initdb.d
     restart: unless-stopped
 
+
 volumes:
   postgis_data:
