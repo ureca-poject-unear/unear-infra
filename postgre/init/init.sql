@@ -164,8 +164,9 @@ CREATE TABLE "admins" (
 DROP TABLE IF EXISTS "franchise";
 
 CREATE TABLE "franchise" (
-                             "franchise_id"	BIGINT		NOT NULL,
-                             "name"	VARCHAR		NULL
+	"franchise_id"	BIGINT		NOT NULL,
+	"franchise_name"	VARCHAR		NULL,
+	"image_url"	VARCHAR		NULL
 );
 
 DROP TABLE IF EXISTS "favorite_places";
