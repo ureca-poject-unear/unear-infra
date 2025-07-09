@@ -48,13 +48,16 @@ CREATE TABLE "user_histories" (
 DROP TABLE IF EXISTS "users";
 
 CREATE TABLE "users" (
-                         "user_id"	BIGINT		NOT NULL,
-                         "name"	VARCHAR		NULL,
-                         "email"	VARCHAR		NULL,
-                         "password"	VARCHAR		NULL,
-                         "birthdate"	DATE		NULL,
-                         "membership_code"	VARCHAR		NULL,
-                         "gender"	VARCHAR		NULL
+	"user_id"	BIGINT		NOT NULL,
+	"name"	VARCHAR		NULL,
+	"email"	VARCHAR		NULL,
+	"tel"	VARCHAR		NULL,
+	"password"	VARCHAR		NULL,
+	"birthdate"	DATE		NULL,
+	"membership_code"	VARCHAR		NULL,
+	"gender"	VARCHAR		NULL,
+	"created_at"	DATE		NULL,
+	"updated_at"	DATE		NULL
 );
 
 DROP TABLE IF EXISTS "unear_events";
@@ -406,3 +409,12 @@ ALTER TABLE "event_places" ADD CONSTRAINT "FK_places_TO_event_places_1" FOREIGN 
                          "places_id"
         );
 
+ 
+-- 더미데이터
+INSERT INTO users (
+  user_id, name, email, tel, password, birthdate, membership_code, gender, created_at, updated_at
+) VALUES (
+  1, '홍길동1', 'user1@test.com', '01012345678',
+  '$2a$10$UOg9Y/WOYuFpLSqAAXUHKukkCGsMUVT3BQ4hEBKNT9jZMml4Jv1O.', -- pw1
+  '1990-01-01', 'VIP', 'M', NOW(), NOW()
+);
