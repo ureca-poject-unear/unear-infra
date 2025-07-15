@@ -161,7 +161,8 @@ CREATE TABLE "franchise" (
 	"image_url"	VARCHAR		NULL,
 	`vvip_policy`	VARCHAR	NULL,
 	`vip_policy`	VARCHAR	NULL,
-	`basic_policy`	VARCHAR	NULL
+	`basic_policy`	VARCHAR	NULL,
+	'category_code' VARCHAR	NULL
 );
 
 CREATE TABLE "favorite_places" (
