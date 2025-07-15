@@ -112,6 +112,7 @@ CREATE TABLE "places" (
 	"place_name"	VARCHAR		NULL,
 	"place_desc"	VARCHAR(255)		NULL,
 	"address"	VARCHAR		NULL,
+	"tel" VARCHAR NULL,
 	"latitude"	NUMERIC(10, 7)		NULL,
 	"longitude"	NUMERIC(10, 7)		NULL,
 	"benefit_category"	VARCHAR		NULL,
