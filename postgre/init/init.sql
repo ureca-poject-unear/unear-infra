@@ -119,7 +119,7 @@ CREATE TABLE "places" (
 	"end_time"	INT		NULL,
 	"category_code"	VARCHAR		NULL,
 	"marker_code"	VARCHAR		NULL,
-	"event_code"	VARCHAR		NULL,
+	"event_type_code"	VARCHAR		NULL,
 	"franchise_id"	BIGINT		NULL
 );
 
