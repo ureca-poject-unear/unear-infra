@@ -348,3 +348,52 @@ INSERT INTO users (
   '$2a$10$UOg9Y/WOYuFpLSqAAXUHKukkCGsMUVT3BQ4hEBKNT9jZMml4Jv1O.', -- pw1
   '1990-01-01', 'VIP', 'M', NOW(), NOW()
 );
+
+
+ALTER TABLE user_coupons RENAME COLUMN user_coupons_id TO user_coupon_id;
+ALTER TABLE user_coupons RENAME COLUMN coupon_templates_id TO coupon_template_id;
+
+-- user_coupons_id → user_coupon_id
+ALTER TABLE user_histories RENAME COLUMN user_coupons_id TO user_coupon_id;
+ALTER TABLE user_histories RENAME COLUMN user_histories_id TO user_history_id;
+-- places_id → place_id
+ALTER TABLE user_histories RENAME COLUMN places_id TO place_id;
+
+
+ALTER TABLE unear_events
+RENAME COLUMN unear_events_id TO unear_event_id;
+
+ALTER TABLE unear_events
+RENAME COLUMN coupon_templates_id TO coupon_template_id;
+
+ALTER TABLE roulette_results
+RENAME COLUMN roulette_results_id TO roulette_result_id;
+
+ALTER TABLE roulette_results
+RENAME COLUMN unear_events_id TO unear_event_id;
+
+
+ALTER TABLE stamps RENAME COLUMN stamps_id TO stamp_id;
+ALTER TABLE stamps RENAME COLUMN event_places_id TO event_place_id;
+ALTER TABLE favorite_places RENAME COLUMN favorite_places_id TO favorite_place_id;
+ALTER TABLE favorite_places RENAME COLUMN places_id TO place_id;
+
+
+ALTER TABLE pos_histories RENAME COLUMN pos_histories_id TO pos_history_id;
+ALTER TABLE pos_histories RENAME COLUMN user_histories_id TO user_history_id;
+ALTER TABLE discount_policy_detail RENAME COLUMN places_id TO place_id;
+ALTER TABLE event_places RENAME COLUMN event_places_id TO event_place_id;
+ALTER TABLE event_places RENAME COLUMN unear_events_id TO unear_event_id;
+ALTER TABLE event_places RENAME COLUMN places_id TO place_id;
+ALTER TABLE unear_events RENAME COLUMN unear_events_id TO unear_event_id;
+ALTER TABLE unear_events RENAME COLUMN coupon_templates_id TO coupon_template_id;
+
+
+ALTER TABLE coupon_templates RENAME COLUMN coupon_templates_id TO coupon_template_id;
+
+ALTER table pos RENAME COLUMN places_id TO place_id;
+
+ALTER TABLE places DROP COLUMN place_id;
+ALTER table places RENAME COLUMN places_id TO place_id;
+
+
