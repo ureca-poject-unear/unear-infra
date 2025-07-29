@@ -9,8 +9,6 @@ services:
     networks:
       - unear-network
     depends_on:
-      postgis:
-        condition: service_healthy
       redis:
         condition: service_healthy
     restart: unless-stopped
@@ -25,8 +23,6 @@ services:
     networks:
       - unear-network
     depends_on:
-      postgis:
-        condition: service_healthy
       redis:
         condition: service_healthy
     restart: unless-stopped
@@ -41,8 +37,6 @@ services:
     networks:
       - unear-network
     depends_on:
-      postgis:
-        condition: service_healthy
       redis:
         condition: service_healthy
     restart: unless-stopped
@@ -60,28 +54,6 @@ services:
     working_dir: /app
     command: npm run dev
     restart: unless-stopped
-
-  postgis:
-    image: postgis/postgis:15-3.3
-    container_name: postgis-container
-    environment:
-      POSTGRES_USER: ${POSTGRES_USER}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
-      POSTGRES_DB: ${POSTGRES_DB}
-    ports:
-      - "${POSTGRES_PORT}:5432"
-    volumes:
-      - postgis_data:/var/lib/postgresql/data
-      - ./postgre/init:/docker-entrypoint-initdb.d
-    restart: unless-stopped
-    networks:
-      - unear-network
-    healthcheck:
-      test: ["CMD", "pg_isready", "-U", "${POSTGRES_USER}"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
-      start_period: 10s
 
   redis:
     image: redis:7-alpine
@@ -101,7 +73,6 @@ services:
       retries: 5
 
 volumes:
-  postgis_data:
   redis_data:
 
 networks:
