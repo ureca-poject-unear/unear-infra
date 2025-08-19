@@ -1,0 +1,3 @@
+[submodule "unear-user-backend"]
+	path = unear-user-backend
+	url = https://github.com/ureca-poject-unear/unear-user-backend.git
