@@ -13,3 +13,6 @@
 [submodule "unear-admin-frontend"]
 	path = unear-admin-frontend
 	url = https://github.com/ureca-poject-unear/unear-admin-frontend.git
+[submodule "unear-admin-backend"]
+	path = unear-admin-backend
+	url = https://github.com/ureca-poject-unear/unear-admin-backend.git
