@@ -4,3 +4,6 @@
 [submodule "unear-frontend"]
 	path = unear-frontend
 	url = https://github.com/ureca-poject-unear/unear-frontend.git
+[submodule "unear-pos-backend"]
+	path = unear-pos-backend
+	url = https://github.com/ureca-poject-unear/unear-pos-backend.git
