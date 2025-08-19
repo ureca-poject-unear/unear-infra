@@ -10,3 +10,6 @@
 [submodule "unear-airflow-analysis"]
 	path = unear-airflow-analysis
 	url = https://github.com/ureca-poject-unear/unear-airflow-analysis.git
+[submodule "unear-admin-frontend"]
+	path = unear-admin-frontend
+	url = https://github.com/ureca-poject-unear/unear-admin-frontend.git
