@@ -7,3 +7,6 @@
 [submodule "unear-pos-backend"]
 	path = unear-pos-backend
 	url = https://github.com/ureca-poject-unear/unear-pos-backend.git
+[submodule "unear-airflow-analysis"]
+	path = unear-airflow-analysis
+	url = https://github.com/ureca-poject-unear/unear-airflow-analysis.git
