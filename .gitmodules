@@ -1,21 +1,21 @@
 [submodule "unear-user-backend"]
 	path = unear-user-backend
-	url = https://github.com/lbk00/unear-user-backend.git
+	url = https://github.com/ureca-poject-unear/unear-user-backend.git
 [submodule "unear-frontend"]
 	path = unear-frontend
 	url = https://github.com/ureca-poject-unear/unear-frontend.git
 [submodule "unear-pos-backend"]
 	path = unear-pos-backend
-	url = https://github.com/lbk00/unear-pos-backend.git
+	url = https://github.com/ureca-poject-unear/unear-pos-backend.git
 [submodule "unear-airflow-analysis"]
 	path = unear-airflow-analysis
-	url = https://github.com/lbk00/unear-airflow-analysis.git
+	url = https://github.com/ureca-poject-unear/unear-airflow-analysis.git
 [submodule "unear-admin-frontend"]
 	path = unear-admin-frontend
-	url = https://github.com/lbk00/unear-admin-frontend.git
+	url = https://github.com/ureca-poject-unear/unear-admin-frontend.git
 [submodule "unear-admin-backend"]
 	path = unear-admin-backend
-	url = https://github.com/lbk00/unear-admin-backend.git
+	url = https://github.com/ureca-poject-unear/unear-admin-backend.git
 [submodule "unear-log-consumer"]
 	path = unear-log-consumer
-	url = https://github.com/lbk00/unear-log-consumer.git
+	url = https://github.com/ureca-poject-unear/unear-log-consumer.git
